@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&family=Roboto:ital,wght@0,400;1,300&family=Ubuntu:wght@500&display=swap');
+
+:root {
+    /* --margin-center: 10px 360px 0px 360px; */
+    --margin-center: 1% 25% 0% 25%;
+    --main-font: 'Radio Canada', sans-serif;
+    --title-font: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.4)), 
+                        url(https://static.photocdn.pt/images/articles/2016-6/iStock_000076679907_Medium.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    font-family: var(--main-font);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.div-title {
+    margin: var(--margin-center);
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+
+#title {
+    color: white;
+    text-decoration: underline;
+}
+
+#description {
+    color: rgb(224, 224, 224);
+    font-style: italic;
+}
+
+form {
+    margin: var(--margin-center);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 15px black;
+
+}
+
+input {
+    font-family: var(--main-font);
+}
+
+.form-header {
+    /* background-color: pink; */
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-group {
+    /* background-color: blue;  */
+    margin-bottom: 0.8rem;
+}
+
+.form-group p {
+    margin-bottom: 0.4rem;
+}
+
+.form-group span {
+    font-size: 0.9rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    width: 90%;
+    min-height: 100px;
+    font-family: var(--main-font);
+}
+
+.stretch-input {
+    display: block;
+    height: 2rem;
+    width: 90%;
+}
+
+#submit {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.808);
+    font-size: 1rem;
+    width: 70%;
+    min-height: 2rem;
+}
+
+#submit:hover {
+    background-color: rgb(97, 255, 82);
+}
+
+/*Responsivity*/
+
+
+/* tablet */
+@media (max-width: 860px) {
+    form, .div-title {
+        margin: 1% 10% 0% 10%;;
+    } 
+}
+
+/* phone  */
+@media (max-width: 400px) {
+    form, .div-title {
+        margin: 1% auto 0% auto;
+    }
+
+    .stretch-input, .form-group textarea {
+        width: 98%;
+    }
+}

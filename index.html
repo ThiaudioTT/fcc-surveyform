@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: survey form</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+    <div class="div-title">
+        <h1 id="title">I.T survey form</h1>
+        <p id="description">Thank you for answering this survey</p>
+    </div>
+    
+    <form id="survey-form" action="#">
+        <div class="form-header">
+
+            <div class="form-group">
+                <label for="name" id="name-label">
+                    <p>Name</p>
+                    <input class="stretch-input" required id="name" name="name" type="text" placeholder="Enter your name. Ex: Daniel">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">
+                    <p>Email</p>
+                    <input class="stretch-input" required id="email" name="email" type="email" placeholder="Enter your email, ex: abc@service.com">
+                </label>    
+            </div>
+
+
+            <div class="form-group">
+                <label for="age" id="number-label">
+                    <p>Age</p>
+                    <input class="stretch-input" id="number" type="number" name="age" placeholder="Enter your age. Ex: 22" min="18" max="110">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="dropdown">
+                    <p>Select what you are</p>
+                    <select class="stretch-input" id="dropdown" name="dropdownType">
+                        <option disabled selected>Select a value</option>
+                        <option value="hirer">Hirer</option>
+                        <option value="curiousPerson">A curious person</option>
+                        <option value="company">Company</option>
+                    </select>
+                </label>
+            </div>
+            
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <p>Would you hire me?</p>
+                <label>
+                    <input type="radio" value="definitely" name="userhire">
+                    <span>Definitely</span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" value="maybe" name="userhire">
+                    <span>Maybe</span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" value="notsure" name="userhire">
+                    <span>Not sure</span>
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p>Select the languages you want me to work on</p>
+                <label>
+                    <input type="checkbox" value="cpp" name="cpp">
+                    <span>C++</span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="python" name="python">
+                    <span>Python</span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="htmlCssJs" name="htmlCssJs">
+                    <span>HTML/CSS/JS</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <p>Say more!</p>
+                    <textarea placeholder="Enter more here."></textarea>
+                </label>
+            </div>
+
+            <!-- submit all -->
+            <input id="submit" type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
